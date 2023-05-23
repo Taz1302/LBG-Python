@@ -1,5 +1,5 @@
 # REST API starter
-
+test trigger webhook
 This application is the start point for Sprint 1 of the Lloyds Bank Group Modern Engineering Bootcamp Project Specification.
 
 ## Installation
@@ -101,7 +101,10 @@ In a new terminal window use the command
 ~~~ bash
 behave .\features\restapp.feature
 ~~~
+<<<<<<< HEAD
 
 ----------
 
 MAKING SOME CHANGES TO REPO
+=======
+>>>>>>> 62a93c2e9bccee4c4df4832f26ef8131d680ec76
