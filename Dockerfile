@@ -3,7 +3,7 @@ FROM python:3.9
 # Copy contents into image
 COPY . .
 # Install pip dependencies from requirements
-RUN RUN pip3 install -r requirements.txt
+RUN pip3 install -r requirements.txt
 # Set environment variable
 ENV lbg.test.py = value
 # Expose the correct port
