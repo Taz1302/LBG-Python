@@ -209,12 +209,12 @@ def delete_one(_id):
 
 # module import protection
 if __name__ == '__main__':
-parser = argparse.ArgumentParser()
-parser.add_argument("--PORT", default="8080")
-args = parser.parse_args()
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--PORT", default="8080")
+    args = parser.parse_args()
 
-PORT = args.PORT
-HOST = '0.0.0.0'
-    # get app to serve
-    print(f'API Listening on http://{HOST}:{PORT}')
-    app.run(host=HOST, port=PORT, debug=True)
+    PORT = args.PORT
+    HOST = '0.0.0.0'
+        # get app to serve
+        print(f'API Listening on http://{HOST}:{PORT}')
+        app.run(host=HOST, port=PORT, debug=True)
