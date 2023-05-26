@@ -214,7 +214,7 @@ parser.add_argument("--PORT", default="8080")
 args = parser.parse_args()
 
 PORT = args.PORT
-HOST = 'localhost'
+HOST = '0.0.0.0'
     # get app to serve
     print(f'API Listening on http://{HOST}:{PORT}')
     app.run(host=HOST, port=PORT, debug=True)
