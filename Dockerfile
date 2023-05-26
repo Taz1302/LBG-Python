@@ -4,9 +4,12 @@ FROM python:3.6
 COPY . .
 # Install pip dependencies from requirements
 RUN pip3 install -r requirements.txt
-# Set YOUR_NAME environment variable
-ENV YOUR_NAME=Tarik
+apt-get update && \
+apt-get install -y python3 && \
+apt-get install -y python3-pip && \
+# Set environment variable
+ENV lbg.test.py
 # Expose the correct port
-EXPOSE 5500
+EXPOSE 8000
 # Create an entrypoint
-ENTRYPOINT ["python3", "app.py"]
+ENTRYPOINT ["python3", "Python.py"]
