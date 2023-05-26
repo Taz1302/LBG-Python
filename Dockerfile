@@ -5,7 +5,7 @@ COPY . .
 # Install pip dependencies from requirements
 RUN RUN pip3 install -r requirements.txt
 # Set environment variable
-ENV lbg.test.py
+ENV lbg.test.py = value
 # Expose the correct port
 EXPOSE 8080
 # Create an entrypoint
